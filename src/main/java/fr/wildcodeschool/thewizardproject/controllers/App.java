@@ -10,7 +10,7 @@ public class App {
 		
 	public void start() {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
-		WizardInterface g = context.getBean("gandalfId", WizardInterface.class);
+		WizardInterface g = context.getBean("theBean", WizardInterface.class);
 		
         context.close();
         
